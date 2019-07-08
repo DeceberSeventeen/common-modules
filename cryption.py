@@ -31,14 +31,14 @@ class Cryption(object):
         raw_bytes = row_str.encode()
         raw_int = int.from_bytes(raw_bytes, 'big')
         key_int = key_int or self.random_key(len(raw_bytes))
-        # 加密文本@随即密钥@加密时混入的字符串
+        # 加密文本@随即密钥
         return str(raw_int ^ key_int) + '-' + str(key_int)
 
     def decrypt(self, cooked_str):
         """
-        cooked_str：加密文本@随即密钥@加密时混入的字符串
+        cooked_str：加密文本@随即密钥
         分别对加密文本（encrypted）和随机密钥（key_int）进行异或操作，计算解密出来的 int 对象所占比特数。
-        decrypted.bit_length 函数得到的是二进制数的位数，除以 8 可以得到所占比特大小。
+        decrypted.bit_length 函数得到的是二进制数的位数，除以 8 可以得到所占字节大小。
         为了防止，1 ~ 7 位的二进制数整除 8 得到 0，所以要加上 7，然后再进行整除 8 的操作。
         使用 int.to_bytes 函数将解密之后的 int 的对象转换成 bytes 对象。
         最后通过 decode 方法，将字节串转换成字符串。
