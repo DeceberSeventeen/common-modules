@@ -236,8 +236,8 @@ if __name__ == '__main__':
     s = SendMailNews('yanglin@aaaaa.com', '不服来战！', '我就发你能咋地。。。。。。。。。。。。。!')
 
     # 接收人地址，是一个list类型，抄送人地址一样
-    toAddr = ['yanglin@aaaaa.com', 'shanzhifeng@aaaaa.com']
-    # cc = ['shanzhifeng@aaaaa.com']
+    toAddr = ['yanglin@aaaaa.com', 'shanzhicccfeng@aaaaa.com']
+    # cc = ['shanzhicccfeng@aaaaa.com']
 
     # 接收的新闻组，是一个list类型
     grou = ['ccccc.aaaaa.jjjjj', 'aaaaa.kkkkk.ddddd']
@@ -257,7 +257,7 @@ if __name__ == '__main__':
 
     # 连接新闻组服务器
     # 传入参数：服务器地址，端口号
-    s.connectNews('192.28.29.28')
+    s.connectNews('192.280.297.288')
 
     # 设置新闻组
     # 传入参数：新闻组名list，和其他的头。

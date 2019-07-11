@@ -52,7 +52,7 @@ class simpleOutput():
                     str_overControl,
                     str_overSign,
                     index_=None):
-        if None != index_:
+        if index_ is not None:
             sys.stdout.write(" " * self.outCharLen + "\r")
             sys.stdout.write(str_frontSign + self.signDict[index_] +
                              str_afterSign + "\r")

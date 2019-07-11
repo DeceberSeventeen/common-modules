@@ -163,9 +163,9 @@ class GetNews(object):
 if __name__ == "__main__":
     # m = SimpEmail("yanglin@aaaaaa.com", "111111Aa", "mail.aaaaaa.com", "25", "yanglin")
     # a = '\tlkjhlkjlkjljljljl\njljlljkjhkjhkj\nhkhkhkkhkhkhkkjhkjkjh'
-    # m.sendEmail(["421168852@qq.com","lin_yang@cccc.com"],"hahahah",a,"./getNews.py", ["shanzhifeng@aaaaaa.com","lichangdong@aaaaaa.com"])
+    # m.sendEmail(["421168852@qq.com","lin_yang@cccc.com"],"hahahah",a,"./getNews.py", ["ccc@aaaaaa.com","ddd@aaaaaa.com"])
 
-    n = GetNews("7.191.9.19", 119)
+    n = GetNews("70.191.90.19", 119)
     resp, count, first, last, name = n.setGroup("aaaa.aaaaa.aaaaaa")
 
     h = n.getHead(735)
